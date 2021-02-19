@@ -1,0 +1,25 @@
+#include <iostream>
+#include <Windows.h>
+
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+
+	int a, b, c, d;
+	d = 0;
+
+	cout << "Введите промежуток чисел: ";
+	cin >> a >> b;
+
+
+	for (int i = a; i <= b; i++)
+	{
+		c = i;
+		cout << c << " ";
+		d++;
+	}
+	cout << "n=" << d;
+	return 0;
+}
